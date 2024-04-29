@@ -49,6 +49,4 @@ router.get('/delete/:id', function (req, res, next) {
   res.send("<h1>This is user delete page </h1>");
 });
 
-
-
 module.exports = router;
