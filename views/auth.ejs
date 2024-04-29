@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Hello for auth route</h1>
-    
-   <h1>
-    <%= info %>
-    <br>
-    <%= subjects%>
-    <br>
-    <%= profile.naam%>
-</h1>
-<a href="/">Back to Home page</a>
+
+    <h1>
+        <%= info %>
+            <br>
+
+            <!-- //for array treversing -->
+            <ol>
+                <% subjects.forEach(function(vishay) { %>
+                    <li>
+                        <%= vishay %>
+                    </li>
+                    <% }) %>
+            </ol>
+            <br>
+
+
+            <!--  //object -->
+            <%= profile.naam%>
+    </h1>
+    <a href="/">Back to Home page</a>
 
 </body>
+
 </html>
